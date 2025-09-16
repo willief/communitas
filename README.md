@@ -58,6 +58,11 @@ export COMMUNITAS_DATA_DIR="./node3-data"
 
 npm run tauri dev
 ```
+#### Verify P2P Connectivity
+```bash
+# Check if nodes can discover each other
+curl http://localhost:1420/api/network/peers
+```
 
 ## Architecture (at a glance)
 
@@ -105,11 +110,7 @@ curl -X POST http://localhost:1420/api/organizations \
   -d '{"name": "Test Organization", "description": "Local testnet org"}'
 ```
 
-### 4. Verify P2P Connectivity
-```bash
-# Check if nodes can discover each other
-curl http://localhost:1420/api/network/peers
-```
+
 
 ## 🐳 Docker Compose Setup
 
